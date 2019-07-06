@@ -24,79 +24,82 @@
             <a class="nav-link" href="#skills">Skills</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#projects">Projects</a>
+            <a class="nav-link" href="#projects-text">Projects</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact-me</a>
+            <a class="nav-link" href="#contact">Contact-me</a>
         </li>
         </ul>
     </div>
     </nav>
 
     <!-- Introduction -->
-    <section class="header">
-        <br><br><br><br><br><br>
-        <h1 id="header-text" class="text-center"></h1>
-    </section>
+    <div class="row header">
+        <div class="col-4">
+            <h1 id="header-text" class="text-left"></h1>
+        </div>
+
+        <!-- Skills -->
+        <!-- Languages -->
+        <div class="col">
+            <div class="row" id="skills">
+                <div class="col">
+                    <ul id="skill" class="list-group">
+                        <li class="list-group-item active" id="active" aria-disabled="true">Languages</li>
+                        <li class="list-group-item">Javascript</li>
+                        <li class="list-group-item">ShellScript</li>
+                        <li class="list-group-item">Kotlin</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Dart</li>
+                        <li class="list-group-item">Java</li>
+                        <li class="list-group-item">Php</li>
+                        <li class="list-group-item">C ++</li>
+                        <li class="list-group-item">C#</li>
+                        <li class="list-group-item">C</li>
+                    </ul>
+                </div>
+                <!-- Framworks -->
+                <div class="col">
+                    <ul id="skill" class="list-group">
+                        <li class="list-group-item active" id="active" aria-disabled="true">Frameworks</li>
+                        <li class="list-group-item">React-Native</li>
+                        <li class="list-group-item">Laravel</li>
+                        <li class="list-group-item">Asp.net</li>
+                        <li class="list-group-item">Flutter</li>
+                        <li class="list-group-item">Django</li>
+                        <li class="list-group-item">Nodejs</li>
+                        <li class="list-group-item">Vuejs</li>
+                        <li class="list-group-item">Kivy</li>
+                        <li class="list-group-item">Flask</li>
+                    </ul>
+                </div>
+                <!-- Game dev skills -->
+                <div class="col">
+                    <ul id="skill" class="list-group">
+                        <li class="list-group-item active" id="active" aria-disabled="true">Game Developer Softwares</li>
+                        <li class="list-group-item">Unreal Engine 4</li>
+                        <li class="list-group-item">Maya</li>
+                        <li class="list-group-item">Zbrush</li>
+                        <li class="list-group-item">Mudbox</li>
+                        <li class="list-group-item">3ds Max</li>
+                        <li class="list-group-item">Photoshop</li>
+                        <li class="list-group-item">Ilustrator</li>
+                        <li class="list-group-item">Blender</li>
+                        <li class="list-group-item">Krita</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Container -->
     <div class="container container">
 
-    <!-- Skills -->
-    <h1>Skills</h1>
-    <!-- Languages -->
-    <div class="row" id="skills">
-        <div class="col-3">
-            <ul class="list-group">
-                <li class="list-group-item active" aria-disabled="true">Languages</li>
-                <li class="list-group-item">Javascript</li>
-                <li class="list-group-item">ShellScript</li>
-                <li class="list-group-item">Kotlin</li>
-                <li class="list-group-item">Python</li>
-                <li class="list-group-item">Dart</li>
-                <li class="list-group-item">Java</li>
-                <li class="list-group-item">Php</li>
-                <li class="list-group-item">C ++</li>
-                <li class="list-group-item">C#</li>
-                <li class="list-group-item">C</li>
-            </ul>
-        </div>
-        <!-- Framworks -->
-        <div class="col-3">
-            <ul class="list-group">
-                <li class="list-group-item active" aria-disabled="true">Frameworks</li>
-                <li class="list-group-item">React-Native</li>
-                <li class="list-group-item">Laravel</li>
-                <li class="list-group-item">Asp.net</li>
-                <li class="list-group-item">Flutter</li>
-                <li class="list-group-item">Django</li>
-                <li class="list-group-item">Nodejs</li>
-                <li class="list-group-item">Vuejs</li>
-                <li class="list-group-item">Kivy</li>
-                <li class="list-group-item">Flask</li>
-            </ul>
-        </div>
-        <!-- Game dev skills -->
-        <div class="col-3">
-            <ul class="list-group">
-                <li class="list-group-item active" aria-disabled="true">Game Developer Softwares</li>
-                <li class="list-group-item">Unreal Engine 4</li>
-                <li class="list-group-item">Maya</li>
-                <li class="list-group-item">Zbrush</li>
-                <li class="list-group-item">Mudbox</li>
-                <li class="list-group-item">3ds Max</li>
-                <li class="list-group-item">Photoshop</li>
-                <li class="list-group-item">Ilustrator</li>
-                <li class="list-group-item">Blender</li>
-                <li class="list-group-item">Krita</li>
-            </ul>
-        </div>
-    </div>
     <!-- Projects -->
-    <h1>Projects</h1>
-    <div id="projects">
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Online Church</li>
+    <h1 id="projects-text"></h1>
+    <div class="row d-flex justify-content-center" id="projects">
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Online Church</li>
             <li class="list-group-item">
                 <img src="./imgs/onlinechurch.png" width="200px" height="auto">
                 <img src="./imgs/onlinechurch_login.png" width="200px" height="auto">
@@ -104,39 +107,43 @@
                 <img src="./imgs/onlinechurch_psalms.png" width="200px" height="auto">
             </li>
         </ul>
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Vuejs Website</li>
-            <li class="list-group-item">
-                <img src="./imgs/vuejs.gif" width="auto" height="250px">
-            </li>
-        </ul>
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Flutter App</li>
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Flutter App</li>
             <li class="list-group-item">
                 <img src="./imgs/flutter.gif" width="200px" height="auto">
             </li>
         </ul>
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Php Website</li>
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Vuejs Website</li>
+            <li class="list-group-item">
+                <img src="./imgs/vuejs.gif" width="auto" height="250px">
+            </li>
+        </ul>
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Django Website</li>
+            <li class="list-group-item">
+                <img src="./imgs/personal_website.gif" width="auto" height="250px">
+            </li>
+        </ul>
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Php Website</li>
             <li class="list-group-item">
                 <img src="./imgs/php_website.png" width="auto" height="250px">
                 <img src="./imgs/php_website_desktop.png" width="auto" height="250px">
             </li>
         </ul>
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Django Website</li>
-            <li class="list-group-item">
-                <img src="./imgs/personal_website.gif" width="auto" height="250px">
-            </li>
-        </ul>
-        <ul class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" aria-disabled="true">Python Instagram Bot</li>
+        <ul id="skill" class="list-group" style="display:inline-block;">
+            <li class="list-group-item active" id="active" aria-disabled="true">Python Instagram Bot</li>
             <li class="list-group-item">
                 <img src="./imgs/follow.gif" width="auto" height="250px">
             </li>
         </ul>
     </div>
 
+    <div id="contact">
+        <h1 id="contact-text">Contact</h1>
+        <h2 id="contact-text">Send me a message at contato.wxkz@gmail.com, or you can also find me at <a href="https://github.com/wxkz">GitHub</a> and <a href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>.</h2>
+    </div>
 
 
     </div><!-- Container -->
@@ -154,19 +161,24 @@
     })
 
     // Write header text function
-    var div = document.getElementById('header-text');
-    var text = 'Programmer, Design, System Administrator and Game Developer';
+    var header = document.getElementById('header-text');
+    var header_text = 'Programmer, Design, System Administrator and Game Developer';
 
-    function write(str, el) {
+    var projects = document.getElementById('projects-text');
+    var projects_text = 'Projects';
+
+    function write(str, el, time) {
         var char = str.split('').reverse();
         var typer = setInterval(function() {
             if (!char.length) return clearInterval(typer);
             var next = char.pop();
             el.innerHTML += next;
-        }, 50);
+        }, time);
     }
 
-    write(text, div);
+    write(header_text, header, 50);
+    write(projects_text, projects, 100);
+
     </script>
 
 </body>
