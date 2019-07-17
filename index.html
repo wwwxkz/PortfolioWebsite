@@ -1,185 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav style="box-shadow: 0 -3px 9px black;" class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-        <li class="nav-item active">
-            <a class="nav-link" href="#">Introduction<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#skills">Skills</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#projects-text">Projects</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact-me</a>
-        </li>
-        </ul>
-    </div>
+        <a class="navbar-brand" href="#">Marcelo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-text">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact-me</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
-    <!-- Introduction -->
-    <div class="row header">
-        <div class="col-4">
-            <h1 id="header-text" class="text-left"></h1>
-        </div>
+    <!-- Container -->
+    <div class="row" id="container">
+        <!-- Introduction -->
+        <div class="row" id="introduction">
+            <div class="column" id="header">
+                <h1 id="header-text"></h1>
+            </div>
 
-        <!-- Skills -->
-        <!-- Languages -->
-        <div class="col">
+            <!-- Skills -->
+            <!-- Languages -->
             <div class="row" id="skills">
-                <div class="col">
-                    <ul id="skill" class="list-group">
-                        <li class="list-group-item active" id="active" aria-disabled="true">Languages</li>
-                        <li class="list-group-item">Javascript</li>
-                        <li class="list-group-item">ShellScript</li>
-                        <li class="list-group-item">Kotlin</li>
-                        <li class="list-group-item">Python</li>
-                        <li class="list-group-item">Dart</li>
-                        <li class="list-group-item">Java</li>
-                        <li class="list-group-item">Php</li>
-                        <li class="list-group-item">C ++</li>
-                        <li class="list-group-item">C#</li>
-                        <li class="list-group-item">C</li>
+                <div class="column" id="skill">
+                    <ul class="nes-list is-circle">
+                        <li><h5 style="color: red">Languages</h5></li>
+                        <li>Javascript</li>
+                        <li>ShellScript</li>
+                        <li>Kotlin</li>
+                        <li>Python</li>
+                        <li>Dart</li>
+                        <li>Java</li>
+                        <li>Php</li>
+                        <li>C ++</li>
+                        <li>C#</li>
+                        <li>C</li>
                     </ul>
                 </div>
                 <!-- Framworks -->
-                <div class="col">
-                    <ul id="skill" class="list-group">
-                        <li class="list-group-item active" id="active" aria-disabled="true">Frameworks</li>
-                        <li class="list-group-item">React-Native</li>
-                        <li class="list-group-item">Laravel</li>
-                        <li class="list-group-item">Asp.net</li>
-                        <li class="list-group-item">Flutter</li>
-                        <li class="list-group-item">Django</li>
-                        <li class="list-group-item">Nodejs</li>
-                        <li class="list-group-item">Vuejs</li>
-                        <li class="list-group-item">Kivy</li>
-                        <li class="list-group-item">Flask</li>
+                <div class="column" id="skill">
+                    <ul class="nes-list is-circle">
+                        <li><h5 style="color: red">Frameworks</h5></li>
+                        <li>React-Native</li>
+                        <li>Laravel</li>
+                        <li>Asp.net</li>
+                        <li>Flutter</li>
+                        <li>Django</li>
+                        <li>Nodejs</li>
+                        <li>Vuejs</li>
+                        <li>Kivy</li>
+                        <li>Flask</li>
                     </ul>
                 </div>
                 <!-- Game dev skills -->
-                <div class="col">
-                    <ul id="skill" class="list-group">
-                        <li class="list-group-item active" id="active" aria-disabled="true">Game Developer Softwares</li>
-                        <li class="list-group-item">Unreal Engine 4</li>
-                        <li class="list-group-item">Maya</li>
-                        <li class="list-group-item">Zbrush</li>
-                        <li class="list-group-item">Mudbox</li>
-                        <li class="list-group-item">3ds Max</li>
-                        <li class="list-group-item">Photoshop</li>
-                        <li class="list-group-item">Ilustrator</li>
-                        <li class="list-group-item">Blender</li>
-                        <li class="list-group-item">Krita</li>
+                <div class="column" id="skill">
+                    <ul class="nes-list is-circle">
+                        <li><h5 style="color: red">Game Developer Softwares</h5></li>
+                        <li>Unreal Engine 4</li>
+                        <li>Maya</li>
+                        <li>Zbrush</li>
+                        <li>Mudbox</li>
+                        <li>3ds Max</li>
+                        <li>Photoshop</li>
+                        <li>Ilustrator</li>
+                        <li>Blender</li>
+                        <li>Krita</li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Container -->
-    <div class="container container">
+        <!-- Projects -->
+        <h1 id="projects-text"></h1>
+        <br>
+        <div class="row" id="projects">
+            <ul id="skill">
+                <li><h4>Online Church</h4></li>
+                <li>
+                    <img src="./imgs/onlinechurch.png" width="200px" height="auto">
+                    <img src="./imgs/onlinechurch_login.png" width="200px" height="auto">
+                    <img src="./imgs/onlinechurch_register.png" width="200px" height="auto">
+                    <img src="./imgs/onlinechurch_psalms.png" width="200px" height="auto">
+                </li>
+                <li>
+                    <h6>React Native</h6>
+                    <h6>Javascript</h6>
+                    <h6>Firebase</h6>
+                    <h6>Admob</h6>
+                </li>
+            </ul>
+            <ul id="skill">
+                <li><h4>Flutter App</h4></li>
+                <li>
+                    <img src="./imgs/flutter.gif" width="200px" height="auto">
+                </li>
+                <li>
+                    <h6>Flutter</h6>
+                    <h6>Dart</h6>
+                </li>
+            </ul>
+            <ul id="skill">
+                <li><h4>Vuejs Website</h4></li>
+                <li>
+                    <img src="./imgs/vuejs.gif" width="auto" height="250px">
+                </li>
+                <li>
+                    <h6>Javascript</h6>
+                    <h6>Jquery</h6>
+                    <h6>Vuejs</h6>
+                    <h6>Git Api</h6>
+                </li>
+            </ul>
+            <ul id="skill">
+                <li><h4>Django Website</h4></li>
+                <li>
+                    <img src="./imgs/personal_website.gif" width="auto" height="250px">
+                </li>
+                <li>
+                    <h6>Django</h6>
+                    <h6>Python</h6>
+                    <h6>Sqlite</h6>
+                </li>
+            </ul>
+            <ul id="skill">
+                <li><h4>Php Website</h4></li>
+                <li>
+                    <img src="./imgs/php_website.png" width="auto" height="250px">
+                    <img src="./imgs/php_website_desktop.png" width="auto" height="250px">
+                </li>
+                <li>
+                    <h6>Php</h6>
+                    <h6>Mysql</h6>
+                    <h6>Hg Brasil Api</h6>
+                </li>
+            </ul>
+            <ul id="skill">
+                <li><h4>Python Instagram Bot</h4></li>
+                <li>
+                    <img src="./imgs/follow.gif" width="auto" height="250px">
+                </li>
+                <li>
+                    <h6>Python</h6>
+                    <h6>Selenium</h6>
+                </li>
+            </ul>
+        </div>
 
-    <!-- Projects -->
-    <h1 id="projects-text"></h1>
-    <div class="row d-flex justify-content-center" id="projects">
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Online Church</li>
-            <li class="list-group-item">
-                <img src="./imgs/onlinechurch.png" width="200px" height="auto">
-                <img src="./imgs/onlinechurch_login.png" width="200px" height="auto">
-                <img src="./imgs/onlinechurch_register.png" width="200px" height="auto">
-                <img src="./imgs/onlinechurch_psalms.png" width="200px" height="auto">
-            </li>
-        </ul>
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Flutter App</li>
-            <li class="list-group-item">
-                <img src="./imgs/flutter.gif" width="200px" height="auto">
-            </li>
-        </ul>
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Vuejs Website</li>
-            <li class="list-group-item">
-                <img src="./imgs/vuejs.gif" width="auto" height="250px">
-            </li>
-        </ul>
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Django Website</li>
-            <li class="list-group-item">
-                <img src="./imgs/personal_website.gif" width="auto" height="250px">
-            </li>
-        </ul>
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Php Website</li>
-            <li class="list-group-item">
-                <img src="./imgs/php_website.png" width="auto" height="250px">
-                <img src="./imgs/php_website_desktop.png" width="auto" height="250px">
-            </li>
-        </ul>
-        <ul id="skill" class="list-group" style="display:inline-block;">
-            <li class="list-group-item active" id="active" aria-disabled="true">Python Instagram Bot</li>
-            <li class="list-group-item">
-                <img src="./imgs/follow.gif" width="auto" height="250px">
-            </li>
-        </ul>
-    </div>
-
-    <div id="contact">
-        <h1 id="contact-text">Contact</h1>
-        <h2 id="contact-text">Send me a message at contato.wxkz@gmail.com, or you can also find me at <a href="https://github.com/wxkz">GitHub</a> and <a href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>.</h2>
-    </div>
-
+        <br><br>
+        <div id="contact">
+            <h1 id="contact-text">Contact</h1>
+            <h2 id="contact-text">Send me a message at contato.wxkz@gmail.com, or you can also find me at <a
+                    href="https://github.com/wxkz">GitHub</a> and <a
+                    href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>.
+            </h2>
+        </div>
 
     </div><!-- Container -->
 
     <!-- Bootstrap import -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
     <!-- Script -->
     <script type="text/javascript">
-    // Fade in when page load
-    $(document).ready(function(){
-        $('body').fadeIn();
-    })
+        // Fade in when page load
+        $(document).ready(function () {
+            $('body').fadeIn();
+        })
 
-    // Write header text function
-    var header = document.getElementById('header-text');
-    var header_text = 'Programmer, Design, System Administrator and Game Developer';
+        // Write header text function
+        var header = document.getElementById('header-text');
+        var header_text = 'Programmer, Design, System Administrator and Game Developer';
 
-    var projects = document.getElementById('projects-text');
-    var projects_text = 'Projects';
+        var projects = document.getElementById('projects-text');
+        var projects_text = 'Projects';
 
-    function write(str, el, time) {
-        var char = str.split('').reverse();
-        var typer = setInterval(function() {
-            if (!char.length) return clearInterval(typer);
-            var next = char.pop();
-            el.innerHTML += next;
-        }, time);
-    }
+        function write(str, el, time) {
+            var char = str.split('').reverse();
+            var typer = setInterval(function () {
+                if (!char.length) return clearInterval(typer);
+                var next = char.pop();
+                el.innerHTML += next;
+            }, time);
+        }
 
-    write(header_text, header, 50);
-    write(projects_text, projects, 100);
+        write(header_text, header, 50);
+        write(projects_text, projects, 100);
 
     </script>
 
 </body>
+
 </html>

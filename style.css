@@ -1,88 +1,49 @@
-body {
-    background-color: black;
+#container {
+    display: flex;
+    margin: 40px;
 }
 
-.header {
-    margin: 4%;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: white;
+#introduction {
+    display: flex;
+    flex-wrap: column;
+    height: 100vh;
+    width: 100vw;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-#header-text {
-    color: white;
+#header {
+    display: flex;
+    flex: 50%;
 }
 
-.container {
-    margin-top: 100px;
-}  
+#skills {
+    display: flex;
+    flex-wrap: row;
+    flex: 50%;
+}
 
-#active {
-    border-color: rgb(146, 146, 146);
-    background-image: linear-gradient(to bottom right,  rgb(53, 53, 53), rgb(66, 66, 66));
-}  
+#skill {
+    margin: 20px;
+    margin-bottom: 40px;
+}
 
-#projects-text {
-    color: white;
+#skill > li {
+    margin: 20px;
+}
+
+#projects-text{
+    margin-top: 50px;
 }
 
 #projects {
-    border-width: 2px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 20px;
+    justify-content: center;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#projects > ul {
+    box-shadow: 1px 1px 3px 5px #dbdbdb;
 }
 
 #contact {
-    margin: 60px;
-    margin-top: 80px;
-}
-
-#contact-text {
-    color: white;
-}
-
-/* Desktop css */
-@media screen and (min-width: 800px) {
-    .header {
-        margin: 4%;
-        height: 100vh;
-        border-bottom-width: 2px;
-        border-bottom-style: solid;
-        border-bottom-color: white;
-    }
-}
-
-/* Tablet css */
-@media screen and (max-width: 800px) {
-    #skill {
-        margin-bottom: 20px;
-    }
-
-    [class*="list-group"] {
-        margin-left: auto;
-        margin-right: auto;
-        width: 450px;
-      }
-
-}
-
-/* Small Tablet css */
-@media screen and (max-width: 500px) {
-    [class*="list-group"] {
-        margin-left: auto;
-        margin-right: auto;
-        width: 300px;
-      }
-
-}
-
-/* Smarthphone css */
-@media screen and (max-width: 350px) {
-    [class*="list-group"] {
-        margin-left: auto;
-        margin-right: auto;
-        width: 250px;
-      }
-
+    margin-top: 50px;
 }
