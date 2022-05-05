@@ -11,7 +11,7 @@ body {
 	justify-content: center;
 	flex-direction: column;
     margin: 40px;
-	max-width: 1200px;
+	max-width: 600px;
 }
 
 .introduction {
@@ -22,10 +22,15 @@ body {
 
 .header {
 	justify-content: center;
+	display: flex;
+}
+
+#header-text {
+	text-align: center;
 }
 
 .skills {
-	justify-content: center;
+	justify-content: space-around;
 	margin: 20px;
     margin-bottom: 40px;
 }
@@ -34,28 +39,14 @@ h5, h4, a {
     color: #e17dff;
 }
 
-.header {
-    display: flex;
-    flex: 50%;
-}
-
 #projects-text{
 	text-align: center;
     margin-top: 50px;
 }
 
 .projects {
-    justify-content: center;
+    justify-content: space-around;
     border-bottom: 1px solid rgb(150, 150, 150);
-}
-
-.projects > ul {
-    list-style-type: none;
-}
-
-.projects > li {
-    align-content: left;
-    justify-content: left;
 }
 
 img {
