@@ -58,6 +58,7 @@ h5, h4, a {
     justify-content: left;
 }
 
-.contact {
-    margin-top: 50px;
+img {
+	width: 200px;
+	height: auto;
 }
