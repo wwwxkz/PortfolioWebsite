@@ -1,32 +1,53 @@
-#container {
+body {
+    background-color: black;
+    color: rgb(150, 150, 150);
+    font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+}
+
+.container {
     display: flex;
     margin: 40px;
+	max-width: 1200px;
 }
 
-#introduction {
+.navbar { 
+    border-bottom: 1px solid rgb(150, 150, 150);
+    
+}
+
+.introduction {
     display: flex;
-    flex-wrap: column;
-    width: 100vw;
-    box-shadow: 0 4px 2px -2px gray;
+	flex-direction: column;
+    width: 100%;
+    border-bottom: 1px solid rgb(150, 150, 150);
 }
 
-#header {
-    display: flex;
-    flex: 50%;
+#header-text {
+	text-align: center;
 }
 
-#skills {
-    display: flex;
-    flex-wrap: row;
-    flex: 50%;
-}
-
-#skill {
-    margin: 20px;
+.skills {
+	justify-content: center;
+	margin: 20px;
     margin-bottom: 40px;
 }
 
-#skill > li {
+h5, h6, a {
+    color: #e17dff;
+}
+
+.header {
+    display: flex;
+    flex: 50%;
+}
+
+.skill {
+   
+}
+
+.skill > li {
     margin: 20px;
 }
 
@@ -34,22 +55,21 @@
     margin-top: 50px;
 }
 
-#projects {
+.projects {
     justify-content: center;
-    box-shadow: 0 4px 2px -2px gray;
+    border-bottom: 1px solid rgb(150, 150, 150);
 }
 
-#projects > ul {
+.projects > ul {
     list-style-type: none;
-    box-shadow: 1px 1px 3px 5px #dbdbdb;
 }
 
-#projects > li {
+.projects > li {
     align-content: left;
     justify-content: left;
 }
 
-#contact {
+.contact {
     margin-top: 50px;
 }
 

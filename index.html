@@ -5,48 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav style="box-shadow: 0 -3px 9px black;" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Marcelo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects-text">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact-me</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Container -->
-    <div class="row" id="container">
-        <!-- Introduction -->
-        <div class="row" id="introduction">
-            <div class="column" id="header">
+    <div class="container row">
+        <!-- Introduction -->	
+        <div class="introduction">
+            <div class="header">
                 <h1 id="header-text"></h1>
             </div>
 
             <!-- Skills -->
             <!-- Languages -->
-            <div class="row" id="skills">
+            <div class="row skills" id="skills">
                 <div class="column" id="skill">
-                    <ul class="nes-list is-circle">
-                        <li><h5 style="color: red">Languages</h5></li>
+                    <ul>
+                        <li><h5>Languages</h5></li>
                         <li>Javascript</li>
                         <li>ShellScript</li>
                         <li>Kotlin</li>
@@ -61,9 +42,10 @@
                 </div>
                 <!-- Framworks -->
                 <div class="column" id="skill">
-                    <ul class="nes-list is-circle">
-                        <li><h5 style="color: red">Frameworks</h5></li>
+                    <ul>
+                        <li><h5>Frameworks</h5></li>
                         <li>React-Native</li>
+                        <li>Wordpress</li>
                         <li>Laravel</li>
                         <li>Asp.net</li>
                         <li>Flutter</li>
@@ -76,17 +58,18 @@
                 </div>
                 <!-- Game dev skills -->
                 <div class="column" id="skill">
-                    <ul class="nes-list is-circle">
-                        <li><h5 style="color: red">Game Developer</h5></li>
+                    <ul>
+                        <li><h5>3D Developer</h5></li>
                         <li>Unreal Engine 4</li>
-                        <li>Maya</li>
-                        <li>Zbrush</li>
-                        <li>Mudbox</li>
-                        <li>3ds Max</li>
-                        <li>Photoshop</li>
+                        <li>Godot Engine</li>
                         <li>Ilustrator</li>
+                        <li>Photoshop</li>
+                        <li>3ds Max</li>
                         <li>Blender</li>
+                        <li>Mudbox</li>
+                        <li>Zbrush</li>
                         <li>Krita</li>
+                        <li>Maya</li>        
                     </ul>
                 </div>
             </div>
@@ -95,14 +78,45 @@
         <!-- Projects -->
         <h1 id="projects-text"></h1>
         <br>
-        <div class="row" id="projects">
-            <ul id="skill">
-                <li><h4>Online Church</h4></li>
+        <div class="row" class="projects">
+			<ul id="skill">
+                <li><h4 href="https://github.com/wwwxkz/FlowpodcastForum">Mobile Social Media</h4></li>
+                <li>
+                    <img src="./imgs/flowpodcastforum-forum.jpeg" width="200px" height="auto">
+                </li>
+                <li>
+                    <h6>Flutter</h6>
+                    <h6>Dart</h6>
+                    <h6>Firebase</h6>
+                </li>
+            </ul>
+			<ul id="skill">
+                <li><h4 href="https://github.com/wwwxkz/viajaNet-website">Angular Website</h4></li>
+                <li>
+                    <img src="./imgs/viajanet.gif" width="200px" height="auto">
+                </li>
+                <li>
+                    <h6>Angular</h6>
+                    <h6>Javascript</h6>
+                    <h6>REST API</h6>
+                </li>
+            </ul>
+			<ul id="skill">
+                <li><h4 href="https://github.com/wwwxkz/PluginPDFFromFormWP">Wordpress Plugin</h4></li>
+                <li>
+                    <img src="./imgs/pluginpdffromformwp-register.png" width="200px" height="auto">
+                </li>
+                <li>
+                    <h6>Wordpress</h6>
+					<h6>PHP</h6>
+					<h6>Javascript</h6>
+                    <h6>FPDF</h6>
+                </li>
+            </ul>
+			<ul id="skill">
+                <li><h4 href="https://github.com/wwwxkz/OnlineChurch">Mobile Sales and Contact</h4></li>
                 <li>
                     <img src="./imgs/onlinechurch.png" width="200px" height="auto">
-                    <img src="./imgs/onlinechurch_login.png" width="200px" height="auto">
-                    <img src="./imgs/onlinechurch_register.png" width="200px" height="auto">
-                    <img src="./imgs/onlinechurch_psalms.png" width="200px" height="auto">
                 </li>
                 <li>
                     <h6>React Native</h6>
@@ -111,68 +125,13 @@
                     <h6>Admob</h6>
                 </li>
             </ul>
-            <ul id="skill">
-                <li><h4>Flutter App</h4></li>
-                <li>
-                    <img src="./imgs/flutter.gif" width="200px" height="auto">
-                </li>
-                <li>
-                    <h6>Flutter</h6>
-                    <h6>Dart</h6>
-                </li>
-            </ul>
-            <ul id="skill">
-                <li><h4>Vuejs Website</h4></li>
-                <li>
-                    <img src="./imgs/vuejs.gif" width="auto" height="250px">
-                </li>
-                <li>
-                    <h6>Javascript</h6>
-                    <h6>Jquery</h6>
-                    <h6>Vuejs</h6>
-                    <h6>Git Api</h6>
-                </li>
-            </ul>
-            <ul id="skill">
-                <li><h4>Django Website</h4></li>
-                <li>
-                    <img src="./imgs/personal_website.gif" width="auto" height="250px">
-                </li>
-                <li>
-                    <h6>Django</h6>
-                    <h6>Python</h6>
-                    <h6>Sqlite</h6>
-                </li>
-            </ul>
-            <ul id="skill">
-                <li><h4>Php Website</h4></li>
-                <li>
-                    <img src="./imgs/php_website.png" width="auto" height="250px">
-                    <img src="./imgs/php_website_desktop.png" width="auto" height="250px">
-                </li>
-                <li>
-                    <h6>Php</h6>
-                    <h6>Mysql</h6>
-                    <h6>Hg Brasil Api</h6>
-                </li>
-            </ul>
-            <ul id="skill">
-                <li><h4>Python Instagram Bot</h4></li>
-                <li>
-                    <img src="./imgs/follow.gif" width="auto" height="250px">
-                </li>
-                <li>
-                    <h6>Python</h6>
-                    <h6>Selenium</h6>
-                </li>
-            </ul>
         </div>
 
         <br><br>
-        <div id="contact">
-            <h1 id="contact-text">Contact</h1>
-            <h2 id="contact-text">Send me a message at contato.wxkz@gmail.com, or you can also find me at <a
-                    href="https://github.com/wxkz">GitHub</a> and <a
+        <div class="contact">
+            <h1 class="contact-text">Contact</h1>
+            <h2 class="contact-text">Send me a message at contato.wxkz@gmail.com, or you can also find me at <a
+                    href="https://github.com/wwwxkz">GitHub</a> and <a
                     href="https://ca.linkedin.com/in/marcelo-rodrigues-campos-5b338418a?trk=people-guest_profile-result-card_result-card_full-click">Linkedin</a>.
             </h2>
         </div>
@@ -196,7 +155,7 @@
 
         // Write header text function
         var header = document.getElementById('header-text');
-        var header_text = 'Programmer, Design, System Administrator and Game Developer';
+        var header_text = 'Programmer, System Administrator and 3D Developer';
 
         var projects = document.getElementById('projects-text');
         var projects_text = 'Projects';
