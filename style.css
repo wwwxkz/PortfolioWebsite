@@ -8,6 +8,8 @@ body {
 
 .container {
     display: flex;
+	justify-content: center;
+	flex-direction: column;
     margin: 40px;
 	max-width: 1200px;
 }
@@ -24,8 +26,8 @@ body {
     border-bottom: 1px solid rgb(150, 150, 150);
 }
 
-#header-text {
-	text-align: center;
+.header {
+	justify-content: center;
 }
 
 .skills {
@@ -34,7 +36,7 @@ body {
     margin-bottom: 40px;
 }
 
-h5, h6, a {
+h5, h4, a {
     color: #e17dff;
 }
 
@@ -43,15 +45,8 @@ h5, h6, a {
     flex: 50%;
 }
 
-.skill {
-   
-}
-
-.skill > li {
-    margin: 20px;
-}
-
 #projects-text{
+	text-align: center;
     margin-top: 50px;
 }
 
@@ -71,49 +66,4 @@ h5, h6, a {
 
 .contact {
     margin-top: 50px;
-}
-
-@media (max-width: 1100px) {
-    #contact-text {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 600px) {
-    #container {
-        margin: 30px;
-    }
-    img {
-        max-width: 100%;
-    }
-    #header-text {
-        font-size: 24px;
-    }
-    #projects-text{
-        font-size: 24px;
-    }
-    #projects h4 {
-        font-size: 18px;
-    }
-    #contact-text {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 350px) {
-    #container {
-        margin: 30px;
-    }
-    img {
-        max-width: 100%;
-    }
-    #header-text {
-        font-size: 20px;
-    }
-    #projects-text{
-        font-size: 20px;
-    }
-    #projects h4 {
-        font-size: 18px;
-    }
 }
