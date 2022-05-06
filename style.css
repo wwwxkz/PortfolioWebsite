@@ -58,5 +58,5 @@ img {
 }
 
 .gif {
-	width: 600px !important;
+	max-width: 600px !important;
 }
