@@ -46,10 +46,17 @@ h5, h4, a {
 
 .projects {
     justify-content: space-around;
-    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.projects > div > div {
+	text-align: center;
 }
 
 img {
 	width: 200px;
 	height: auto;
+}
+
+.gif {
+	width: 400px !important;
 }
